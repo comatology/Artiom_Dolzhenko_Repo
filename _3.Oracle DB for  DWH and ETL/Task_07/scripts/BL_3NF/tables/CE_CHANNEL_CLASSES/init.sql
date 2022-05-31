@@ -1,0 +1,19 @@
+INSERT INTO CE_CHANNEL_CLASSES (
+    CHANNEL_CLASS_ID,
+    CHANNEL_CLASS_SRCID,
+    CHANNEL_CLASS_SOURCE_SYSTEM,
+    CHANNEL_CLASS_SOURCE_ENTITY,
+    CHANNEL_CLASS,
+    TA_UPDATE_DT,
+    TA_INSERT_DT
+) VALUES (
+    - 1,
+    - 1,
+    'personnel_sales',
+    'src_channels',
+    'N/A',
+    SYSDATE,
+    SYSDATE
+);
+
+COMMIT;

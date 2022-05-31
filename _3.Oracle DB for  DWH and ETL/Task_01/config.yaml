@@ -1,0 +1,8 @@
+db_name : ordered_numbers.db
+table_name : t_ordered_items
+json_file : ordered_numbers_df.json
+avro_file_1 : t_ordered_items_1.avro
+avro_file_2 : t_ordered_items_2.avro
+excel_file : t_ordered_items.xlsx
+parquet_gz_file : t_ordered_items.parquet.gzip
+parquet_file : t_ordered_items.parquet

@@ -1,0 +1,127 @@
+
+CREATE SEQUENCE seq_ce_address_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+CREATE SEQUENCE seq_ce_brand_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+CREATE SEQUENCE seq_ce_channel_class_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_channel_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_city_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_country_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_customer_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+    
+
+CREATE SEQUENCE seq_ce_epmployee_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_position_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+
+CREATE SEQUENCE seq_ce_product_type_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+
+CREATE SEQUENCE seq_ce_product_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_promotion_category_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+    
+
+CREATE SEQUENCE seq_ce_promotion_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_sale_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_state_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;
+
+
+CREATE SEQUENCE seq_ce_store_id
+    START WITH 1
+    INCREMENT BY 1
+    MINVALUE 1
+    NOMAXVALUE
+    NOCYCLE;

@@ -1,0 +1,86 @@
+DROP TABLE SOURCE_ABSTRACTION.GEO_STRUCTURE_ISO3166;
+CREATE TABLE SOURCE_ABSTRACTION.GEO_STRUCTURE_ISO3166(
+    child_code          VARCHAR2(100),
+    parent_code         VARCHAR2(100),
+    structure_desc      VARCHAR2(100),
+    structure_level     VARCHAR2(100)
+)
+ORGANIZATION EXTERNAL (
+TYPE ORACLE_LOADER
+  DEFAULT DIRECTORY SOURCE_GEO
+  ACCESS PARAMETERS (
+        RECORDS DELIMITED BY NEWLINE
+        SKIP 1
+        FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+        MISSING FIELD VALUES ARE NULL (
+            child_code      CHAR(100),
+            parent_code     CHAR(100),
+            structure_desc  CHAR(100),
+            structure_level CHAR(100)))
+
+  LOCATION (SOURCE_GEO:'geo_structure_iso3166.csv')  
+) ;
+
+SELECT * FROM SOURCE_ABSTRACTION.GEO_STRUCTURE_ISO3166;
+
+
+DROP TABLE SOURCE_ABSTRACTION.GEO_COUNTRIES_STRUCTURE_ISO3166;
+CREATE TABLE SOURCE_ABSTRACTION.GEO_COUNTRIES_STRUCTURE_ISO3166(
+    country_id          VARCHAR2(100),
+    country_desc        VARCHAR2(100),
+    structure_code      VARCHAR2(100),
+    structure_desc      VARCHAR2(100)
+)
+ORGANIZATION EXTERNAL (
+TYPE ORACLE_LOADER
+  DEFAULT DIRECTORY SOURCE_GEO
+  ACCESS PARAMETERS (
+        RECORDS DELIMITED BY NEWLINE
+        SKIP 1
+        FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+        MISSING FIELD VALUES ARE NULL (
+            country_id      CHAR(100),
+            country_desc    CHAR(100),
+            structure_code  CHAR(100),
+            structure_desc  CHAR(100)
+))
+
+  LOCATION (SOURCE_GEO:'geo_countries_structure_iso3166.csv')  
+) ;
+
+SELECT * FROM SOURCE_ABSTRACTION.GEO_COUNTRIES_STRUCTURE_ISO3166;
+
+
+
+
+DROP TABLE SOURCE_ABSTRACTION.GEO_COUNTRIES_ISO3166;
+CREATE TABLE SOURCE_ABSTRACTION.GEO_COUNTRIES_ISO3166(
+    country_id          VARCHAR2(100),
+    country_desc        VARCHAR2(100),
+    country_code      VARCHAR2(100)
+)
+ORGANIZATION EXTERNAL (
+TYPE ORACLE_LOADER
+  DEFAULT DIRECTORY SOURCE_GEO
+  ACCESS PARAMETERS (
+        RECORDS DELIMITED BY NEWLINE
+        SKIP 1
+        FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+        MISSING FIELD VALUES ARE NULL (
+            country_id      CHAR(100),
+            country_desc    CHAR(100),
+            country_code  CHAR(100)
+))
+
+  LOCATION (SOURCE_GEO:'geo_countries_iso3166.csv')  
+) ;
+
+SELECT * FROM SOURCE_ABSTRACTION.GEO_COUNTRIES_ISO3166;
+
+
+
+
+
+
+
+

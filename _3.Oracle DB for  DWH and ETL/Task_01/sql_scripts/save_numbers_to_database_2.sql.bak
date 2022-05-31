@@ -1,0 +1,1 @@
+select count(1) from t_ordered_items where ORDERED_ITEMS_SURR_ID=replase_1 and MEMBER = 'replase_2';

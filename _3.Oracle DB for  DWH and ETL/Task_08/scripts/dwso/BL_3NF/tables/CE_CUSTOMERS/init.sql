@@ -1,0 +1,36 @@
+INSERT INTO CE_CUSTOMERS (
+    CUSTOMER_ID,
+    CUSTOMER_SRCID,
+    CUSTOMER_SOURCE_SYSTEM,
+    CUSTOMER_SOURCE_ENTITY,
+    FIRST_NAME,
+    LAST_NAME,
+    COMPANY_NAME,
+    COMPANY_NUMBER,
+    PHONE,
+    GENDER,
+    YEAR_OF_BIRTHDAY,
+    EMAIL,
+    ADDRESS,
+    COUNTRY_ID,
+    TA_UPDATE_DT,
+    TA_INSERT_DT
+) VALUES (
+    - 1,
+    - 1,
+    'personnel_sales',
+    'src_employees',
+    'N/A',
+    'N/A',
+    'N/A',
+    'N/A',
+    'N/A',
+    'N/A',
+    - 1,
+    'N/A',
+    'N/A',
+    - 1,
+    SYSDATE,
+    SYSDATE
+);
+COMMIT;      

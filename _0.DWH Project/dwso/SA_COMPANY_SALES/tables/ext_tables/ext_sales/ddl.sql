@@ -1,0 +1,30 @@
+DROP TABLE SA_SOURCE_SYSTEM_2.SALES;
+CREATE TABLE SA_SOURCE_SYSTEM_2.SALES(
+ product_id VARCHAR2(100),
+ customer_id VARCHAR2(100),
+ channel_id VARCHAR2(100),
+ promo_id VARCHAR2(100),
+ employee_id VARCHAR2(100),
+ store_id VARCHAR2(100),
+ quantity_sold VARCHAR2(100),
+ time_id VARCHAR2(100)
+)
+ORGANIZATION EXTERNAL (
+TYPE ORACLE_LOADER
+  DEFAULT DIRECTORY SOURCE_2
+  ACCESS PARAMETERS (
+        RECORDS DELIMITED BY NEWLINE
+        SKIP 1
+        FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+        MISSING FIELD VALUES ARE NULL (
+product_id CHAR(100),
+ customer_id CHAR(100),
+ channel_id CHAR(100),
+ promo_id CHAR(100),
+ employee_id CHAR(100),
+ store_id CHAR(100),
+ quantity_sold CHAR(100),
+ time_id CHAR(100)))
+
+  LOCATION (SOURCE_2:'sales.csv')  
+) ;

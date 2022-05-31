@@ -1,0 +1,1 @@
+select count(1) from t_ordered_items where INSERT_DATE=date('now');

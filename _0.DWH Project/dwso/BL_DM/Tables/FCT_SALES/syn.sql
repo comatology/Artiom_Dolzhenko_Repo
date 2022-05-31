@@ -1,0 +1,1 @@
+ CREATE PUBLIC SYNONYM fct_sales FOR BL_DM.fct_sales;

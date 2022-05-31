@@ -1,0 +1,19 @@
+INSERT INTO CE_PRODUCT_TYPES (
+    PRODUCT_TYPE_ID,
+    PRODUCT_TYPE_SRCID,
+    PRODUCT_TYPE_SOURCE_SYSTEM,
+    PRODUCT_TYPE_SOURCE_ENTITY,
+    PRODUCT_TYPE,
+    TA_UPDATE_DT,
+    TA_INSERT_DT
+) VALUES (
+    - 1,
+    - 1,
+    'personnel_sales',
+    'src_products',
+    'N/A',
+    SYSDATE,
+    SYSDATE
+);
+
+COMMIT;

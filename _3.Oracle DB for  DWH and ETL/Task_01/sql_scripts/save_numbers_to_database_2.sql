@@ -1,0 +1,1 @@
+update t_ordered_items set replase_1 INSERT_DATE =  DATE('now')   where ORDERED_ITEMS_SURR_ID=replase_2 and MEMBER = 'replase_3'
